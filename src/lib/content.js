@@ -540,3 +540,33 @@ export const IMAGERY = {
     { name: 'aerial-bank', caption: 'Every site, on one basis' },
   ],
 };
+
+/* ---------------------------------------------------------- Home top */
+// The hero says what Hydris is in one line, and shows it on a real plant photograph.
+// Positions are a share of the photograph (tanks-grid, 2000 x 1500), measured on the image.
+
+export const HERO_TOP = {
+  label: 'Operational Water Intelligence',
+  title: 'The intelligence layer for industrial water.',
+  sub: 'Hydris turns the water data your plant already collects into decisions your team can act on.',
+  photo: 'tanks-grid',
+  focusX: 0.12,
+  rings: [
+    { x: 0.214, y: 0.246, r: 0.161, tag: 'Clarifier 1', state: 'Stable' },
+    { x: 0.212, y: 0.699, r: 0.164, tag: 'Clarifier 2', state: 'Rising since 18:40', alert: true },
+  ],
+  points: [
+    { x: 0.6, y: 0.235 }, { x: 0.735, y: 0.4 }, { x: 0.6, y: 0.7 },
+    { x: 0.735, y: 0.86 }, { x: 0.87, y: 0.235 }, { x: 0.87, y: 0.7 }, { x: 0.6, y: 0.4 }, { x: 0.735, y: 0.535 },
+  ],
+  probe: { x: 0.735, y: 0.4, tag: 'Aeration 3', label: 'Oxygen', value: 4.2 },
+  lens: 'How Hydris reads it',
+  caption: 'Fig. 1  An illustrative reading of a treatment plant. Move across the image to see the structure Hydris reasons over.',
+};
+
+export const FACTS = [
+  { n: 0, label: 'New sensors or meters to install' },
+  { n: 30, unit: 'days', label: 'Of the data you already have is enough to begin' },
+  { n: 'Weeks', label: 'From first export to a daily read, not quarters' },
+  { n: 'Millions', unit: 'litres', label: 'Of industrial water under Hydris management every day' },
+];

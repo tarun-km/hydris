@@ -62,7 +62,9 @@ export function Words({ as: Tag = 'h1', text, className = '', delay = 0, center 
 export function SecHead({ index, label, title, text, tone }) {
   return (
     <header className={`sechead grid ${tone === 'dark' ? 'sechead--dark' : ''}`}>
-      <Reveal as="p" className="s-label sechead__label">({index}){label ? ` ${label}` : ''}</Reveal>
+      <Reveal as="p" className="s-label sechead__label">
+        <span className="sechead__n">{index}</span>{label && <span className="sechead__l">{label}</span>}
+      </Reveal>
       <div className="sechead__main">
         <Heading text={title} className="t-m" />
         {text && <Reveal as="p" className="sechead__text lead mute" delay={0.15}>{text}</Reveal>}
